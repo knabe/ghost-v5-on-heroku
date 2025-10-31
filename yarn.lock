@@ -1500,7 +1500,8 @@ lru-cache@^7.14.1:
 
 "lyra@github:TryGhost/lyra#main":
   version "1.0.0"
-  resolved "https://codeload.github.com/TryGhost/lyra/tar.gz/d72a107daf22da7c4c9d67c16c6ab6106b3cf21a"
+  uid "42d51f960ac885e52fbc2b11de672944c4790e75"
+  resolved "https://codeload.github.com/TryGhost/lyra/tar.gz/42d51f960ac885e52fbc2b11de672944c4790e75"
 
 mimic-response@^1.0.0:
   version "1.0.1"
