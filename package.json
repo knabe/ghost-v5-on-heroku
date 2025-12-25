@@ -18,6 +18,9 @@
         "url": "https://github.com/thelovekesh/ghost-v5-on-heroku/issues"
     },
     "homepage": "https://github.com/thelovekesh/ghost-v5-on-heroku#readme",
+    "engines": {
+        "node": "20.x"
+    },
     "dependencies": {
         "mysql": "^2.18.1",
         "casper": "github:TryGhost/Casper#main",
@@ -31,7 +34,6 @@
     },
     "scripts": {
         "start": "node ghost/index.js",
-        "preinstall": "yarn config set ignore-engines true 2>/dev/null || true",
-        "postinstall": "node bin/install-ghost.mjs && yarn install --cwd ghost && bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh"
+        "postinstall": "node bin/install-ghost.mjs && cd ghost && npm install && cd .. && bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh"
     }
 }
