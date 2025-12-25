@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/thelovekesh/ghost-v5-on-heroku#readme",
     "dependencies": {
+        "mysql": "^2.18.1",
         "casper": "github:TryGhost/Casper#main",
         "ghost-storage-adapter-s3": "^2.8.0",
         "ghost-storage-cloudinary": "^3.0.2",
