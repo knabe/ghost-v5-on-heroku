@@ -1,7 +1,7 @@
 {
     "name": "ghost-v5-on-heroku",
-    "version": "5.94.0",
-    "description": "Deploy latest ghost v5 on Heroku",
+    "version": "6.10.3",
+    "description": "Deploy latest Ghost on Heroku",
     "main": "ghost/index.js",
     "repository": {
         "type": "git",
@@ -25,7 +25,6 @@
         "mysql": "^2.18.1",
         "casper": "github:TryGhost/Casper#main",
         "ghost-storage-adapter-s3": "^2.8.0",
-        "ghost-storage-cloudinary": "^3.0.2",
         "lyra": "github:TryGhost/lyra#main",
         "mysql2": "3.15.3"
     },
@@ -34,6 +33,6 @@
     },
     "scripts": {
         "start": "node ghost/index.js",
-        "postinstall": "node bin/install-ghost.mjs && cd ghost && npm install --legacy-peer-deps && cd .. && bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh"
+        "postinstall": "node bin/install-ghost.mjs && cd ghost && npm install --legacy-peer-deps && cd .. && bash bin/aws-s3.sh && bash bin/themes.sh"
     }
 }
