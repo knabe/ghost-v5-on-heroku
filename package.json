@@ -31,7 +31,7 @@
     },
     "scripts": {
         "start": "node ghost/index.js",
-        "preinstall": "yarn config set ignore-engines true",
+        "preinstall": "yarn config set ignore-engines true 2>/dev/null || true",
         "postinstall": "node bin/install-ghost.mjs && yarn install --cwd ghost && bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh"
     }
 }
